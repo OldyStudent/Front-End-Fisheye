@@ -1,37 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <meta charset="utf-8">
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fisheye - Photographe</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Fisheye - photographe </title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="./css/photographer.css">
+</head>
+<body>
+
     <header>
-      <img src="assets/images/logo.png" class="logo" />
+        <a href="index.html" tabindex="1">
+            <img src="assets/images/logo.png" class="logo" alt="Fisheye, page d'accueil">
+        </a>
     </header>
+
     <main id="main">
-      <div class="photograph-header">
-        <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
-      </div>
+        <photographer-horizontal-card></photographer-horizontal-card>
+        <gallery-grid></gallery-grid>
     </main>
-    <div id="contact_modal">
-			<div class="modal">
-				<header>
-          <h2>Contactez-moi</h2>
-          <img src="assets/icons/close.svg" onclick="closeModal()" />
-        </header>
-				<form>
-					<div>
-						<label>Prénom</label>
-						<input />
-					</div>
-          <button class="contact_button">Envoyer</button>
-				</form>
-			</div>
-		</div>
-    <script src="/scripts/pages/photographer.js"></script>
-    <script src="/scripts/utils/contactForm.js"></script>
-  </body>
+
+    <script type="module" src="/scripts/pages/photographer.js"></script>
+</body>
 </html>

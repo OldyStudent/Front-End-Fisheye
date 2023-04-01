@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gallery-header {
+    margin-block: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gallery-header__sort-by-label {
+    font-weight: bold;
+}
+
+.gallery-grid {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
