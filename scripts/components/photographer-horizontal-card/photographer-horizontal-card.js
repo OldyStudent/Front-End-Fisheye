@@ -19,11 +19,13 @@ class PhotographerHorizontalCardComponent extends GenericComponent {
         const contactButtonElement = this.shadowRoot.querySelector('#card__contact-btn');
         const contactModalElement = this.shadowRoot.querySelector('modal-contact');
 
-        // Au clic, Afficher la fenêtre modale de contact
-        contactButtonElement.addEventListener("click", () => {
-            contactModalElement.data = this.data;
-            contactModalElement.isVisible = true;
-        });
+        if (contactButtonElement) {
+            // Au clic, Afficher la fenêtre modale de contact
+            contactButtonElement.addEventListener("click", () => {
+                contactModalElement.data = this.data;
+                contactModalElement.isVisible = true;
+            });
+        }
     }
 }
 
